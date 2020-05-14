@@ -8,8 +8,12 @@ abstract class BaseCoordinator {
 }
 
 class PokemonListCoordinator implements BaseCoordinator {
+  int generation;
+  PokemonListCoordinator(int this.generation);
+
   Widget widget() {
-    var viewModel = PokemonListViewModel(service: PokemonServiceImpl(0));
+    var viewModel =
+        PokemonListViewModel(service: PokemonServiceImpl(generation));
     return PokemonListPage(viewModel: viewModel);
   }
 }

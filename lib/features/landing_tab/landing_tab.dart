@@ -31,10 +31,11 @@ class LandingTabPage extends StatelessWidget {
             case 0:
               return CupertinoTabView(
                   builder: (BuildContext context) =>
-                      PokemonListCoordinator().widget());
+                      PokemonListCoordinator(generation).widget());
             case 1:
               return CupertinoTabView(
-                  builder: (BuildContext context) => PokemonGridPage());
+                  builder: (BuildContext context) =>
+                      PokemonGridPage(generation));
           }
           return OnboardingPage();
         });
