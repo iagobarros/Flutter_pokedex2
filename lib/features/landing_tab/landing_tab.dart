@@ -13,8 +13,8 @@ class LandingTabPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return CupertinoTabScaffold(
         tabBar: CupertinoTabBar(
-          backgroundColor: Colors.blueGrey,
-          inactiveColor: Colors.grey.withOpacity(0.8),
+          backgroundColor: Colors.red,
+          inactiveColor: Colors.black.withOpacity(0.8),
           activeColor: Colors.white,
           items: [
             BottomNavigationBarItem(

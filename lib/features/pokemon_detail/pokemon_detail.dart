@@ -35,10 +35,10 @@ class _PokemonDetailState extends State<PokemonDetail> {
             style: TextStyle(color: Colors.white),
           ),
           actionsForegroundColor: Colors.white,
-          backgroundColor: Colors.blueGrey,
+          backgroundColor: Colors.red,
         ),
         child: Container(
-            color: Colors.blueGrey.withOpacity(0.8),
+            color: Colors.red.withOpacity(0.8),
             child: pokemonResponseModel != null
                 ? Padding(
                     padding: EdgeInsets.all(8),
@@ -47,7 +47,7 @@ class _PokemonDetailState extends State<PokemonDetail> {
                       children: <Widget>[
                         Card(
                           elevation: 50,
-                          color: Color(0xff758A97),
+                          color: Colors.red,
                           child: Container(
                             margin: EdgeInsets.all(16),
                             child: Column(
@@ -84,7 +84,7 @@ class _PokemonDetailState extends State<PokemonDetail> {
                         ),
                         Card(
                           elevation: 50,
-                          color: Color(0xff758A97),
+                          color: Colors.red,
                           child: Container(
                             margin: EdgeInsets.all(16),
                             child: Column(

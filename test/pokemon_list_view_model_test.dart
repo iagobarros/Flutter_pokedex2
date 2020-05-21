@@ -9,7 +9,7 @@ void main() {
   PokemonService service;
 
   setUpAll(() {
-    service = PokemonServiceImpl(0);
+    service = PokemonServiceImpl(1);
     viewModel = PokemonListViewModel(service: service);
   });
 

@@ -34,10 +34,10 @@ class _PokemonListPageState extends State<PokemonListPage> {
             _viewModel.navigationTitle,
             style: TextStyle(color: Colors.white),
           ),
-          backgroundColor: Colors.blueGrey,
+          backgroundColor: Colors.red,
         ),
         child: Container(
-            color: Colors.blueGrey.withOpacity(_Constants.opacity),
+            color: Colors.red.withOpacity(_Constants.opacity),
             child: Padding(
                 padding: const EdgeInsets.all(_Constants.defaultPadding),
                 child: _buildUIForState())));
