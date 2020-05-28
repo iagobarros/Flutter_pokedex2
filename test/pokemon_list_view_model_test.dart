@@ -1,7 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pokedex/features/pokemon_list/pokemon_list_view_model.dart';
 import 'package:pokedex/services/pokemon_service.dart';
-
 import 'helper/services/mocked_pokemon_service.dart';
 
 void main() {

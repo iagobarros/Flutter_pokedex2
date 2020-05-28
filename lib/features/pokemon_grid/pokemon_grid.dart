@@ -55,10 +55,10 @@ class PokemonGridPage extends StatelessWidget {
             "POKÉDEX",
             style: TextStyle(color: Colors.white),
           ),
-          backgroundColor: Colors.blueGrey,
+          backgroundColor: Colors.red,
         ),
         child: Container(
-          color: Colors.blueGrey.withOpacity(0.8),
+          color: Colors.red.withOpacity(0.8),
           child: GridView.count(
             crossAxisCount: 4,
             crossAxisSpacing: 8,

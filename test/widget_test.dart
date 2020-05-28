@@ -7,7 +7,6 @@ void main() {
     testWidgets('Navigate to Onboarding first page to last page to expect text',
         (WidgetTester tester) async {
       var onboardingPage = OnboardingPage();
-
       await tester.pumpWidget(CupertinoApp(home: onboardingPage));
       var element = find.byKey(Key("onboarding_page_view"));
 
@@ -49,6 +48,13 @@ void main() {
 
       expect(find.text("Generation 7"), findsOneWidget);
       expect(find.text("Gotta Catch Them All"), findsOneWidget);
+    });
+
+    testWidgets('Navigate to Onboarding first page to last page to expect text',
+        (WidgetTester tester) async {
+      var onboardingPage = OnboardingPage();
+      await tester.pumpWidget(CupertinoApp(home: onboardingPage));
+      var element = find.byKey(Key("onboarding_page_view"));
     });
   });
 }

@@ -73,9 +73,9 @@ class OnboardingPageChild extends StatelessWidget {
                       ),
                       model.shouldPresentButton
                           ? CupertinoButton(
-                            key: Key("button"),
+                              key: Key("button"),
                               child: Text(model.buttonTitle),
-                              color: Colors.black,
+                              color: Colors.blueGrey,
                               onPressed: () {
                                 model.onButtonPressed(context);
                               })
